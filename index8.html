@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2>Mini Simulador de Coordenadas</h2>
+    <p>Clique no botão para mover o bloco via JavaScript.</p>
+
+    <!-- Nossa "peça" para usinar -->
+    <div id="bloco" style="width:50px; height:50px; background:red; position:absolute; left:0px; transition: 0.5s;"></div>
+
+    <button onclick="mover()" style="margin-top: 100px;">Mover para X=200</button>
+
+    <script>
+        // Esta é a função JavaScript (como um subprograma de CNC)
+        function mover() {
+            const peca = document.getElementById("bloco");
+            peca.style.left = "200px";
+            peca.style.background = "blue";
+            console.log("Movimento executado com sucesso!");
+        }
+    </script>
+
+</body>
+</html> /* tester*/
